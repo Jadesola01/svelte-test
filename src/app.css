@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-display: swap;
+	font-style: normal;
+	font-weight: 300;
+	font-family: Cera Pro;
+	src: url(./lib/fonts/CeraPro/CeraPro-Light.woff2);
+}
+@font-face {
+	font-display: swap;
+	font-style: normal;
+	font-weight: 400;
+	font-family: Cera Pro;
+	src: url(./lib/fonts/CeraPro/CeraPro-Regular.woff2);
+}
+@font-face {
+	font-display: swap;
+	font-style: normal;
+	font-weight: 500;
+	font-family: Cera Pro;
+	src: url(./lib/fonts/CeraPro/CeraPro-Medium.woff2);
+}
+@font-face {
+	font-display: swap;
+	font-style: normal;
+	font-weight: 700;
+	font-family: Cera Pro;
+	src: url(./lib/fonts/CeraPro/CeraPro-Bold.woff2);
+}
+@font-face {
+	font-display: swap;
+	font-style: normal;
+	font-weight: 300;
+	font-family: Satoshi;
+	src: url(./lib/fonts/Satoshi/Satoshi-Light.otf);
+}
+@font-face {
+	font-display: swap;
+	font-style: normal;
+	font-weight: 400;
+	font-family: Satoshi;
+	src: url(./lib/fonts/Satoshi/Satoshi-Regular.otf);
+}
+@font-face {
+	font-display: swap;
+	font-style: normal;
+	font-weight: 500;
+	font-family: Satoshi;
+	src: url(./lib/fonts/Satoshi/Satoshi-Medium.otf);
+}
+@font-face {
+	font-display: swap;
+	font-style: normal;
+	font-weight: 700;
+	font-family: Satoshi;
+	src: url(./lib/fonts/Satoshi/Satoshi-Bold.otf);
+}
+@font-face {
+	font-display: swap;
+	font-style: normal;
+	font-weight: 400;
+	font-family: Charm;
+	src: url(./lib/fonts/Charm/Charm-Regular.ttf);
+}
+@font-face {
+	font-display: swap;
+	font-style: normal;
+	font-weight: 700;
+	font-family: Charm;
+	src: url(./lib/fonts/Charm/Charm-Bold.ttf);
+}
+@font-face {
+	font-display: swap;
+	font-style: normal;
+	font-weight: 300;
+	font-family: Aeonik;
+	src: url(./lib/fonts/Aeonik/Aeonik-Bold.otf);
+}
+@font-face {
+	font-display: swap;
+	font-style: normal;
+	font-weight: 400;
+	font-family: Aeonik;
+	src: url(./lib/fonts/Aeonik/Aeonik-Regular.otf);
+}
+@font-face {
+	font-display: swap;
+	font-style: normal;
+	font-weight: 700;
+	font-family: Aeonik;
+	src: url(./lib/fonts/Aeonik/Aeonik-Bold.otf);
+}
+
+:root,
+body {
+	min-height: 100%;
+	color: #101010;
+	background-color: #fff;
+}
+
+.restrict {
+	height: 100vh;
+	overflow: hidden;
+}
+
+@media (min-width: 1024) {
+	.restrict {
+		height: unset;
+		overflow: unset;
+	}
+}
