@@ -1,0 +1,39 @@
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+  font-family: Cera Pro;
+  src: url(./CeraPro/CeraPro-Light.woff2);
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Cera Pro;
+  src: url(./CeraPro/CeraPro-Regular.woff2);
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  font-family: Cera Pro;
+  src: url(./CeraPro/CeraPro-Medium.woff2);
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  font-family: Cera Pro;
+  src: url(./CeraPro/CeraPro-Bold.woff2);
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Aeonik;
+  src: url(./Aeonik/Aeonik-Regular.otf);
+}

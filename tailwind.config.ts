@@ -1,26 +1,25 @@
 import type { Config } from 'tailwindcss';
 
 export default {
-	content: ['./src/**/*.{html,js,svelte,ts}'],
-	theme: {
-		extend: {
-			backgroundImage: {
-				'grey-lines': 'url(./src/lib/background-assets/grey-lines.svg)',
-				'grey-lines-lg': 'url(./src/lib/background-assets/grey-lines-lg.svg)',
-				'pink-lines': 'url(./src/lib/background-assets/pink-lines.svg)',
-				'pink-lines-lg': 'url(./src/lib/background-assets/pink-lines-lg.svg)',
-				'faq-dots': 'url(./src/lib/background-assets/faq-dots.svg)',
-				dots: 'url(./src/lib/background-assets/dots.svg)',
-				'dots-lg': 'url(./src/lib/background-assets/dots-lg.svg)'
-			},
-			content: { confetti: 'url(./src/lib/background-assets/confetti.svg)' },
-			fontFamily: {
-				satoshi: 'Satoshi',
-				'cera-pro': 'Cera Pro',
-				charm: 'Charm',
-				aeonik: 'Aeonik'
-			}
-		}
-	},
-	plugins: []
+  content: ['./src/**/*.{html,js,svelte,ts}'],
+  theme: {
+    extend: {
+      backgroundImage: {
+        'grey-lines': 'url(/backgrounds/grey-lines.svg)',
+        'grey-lines-lg': 'url(/backgrounds/grey-lines-lg.svg)',
+        'pink-lines': 'url(/backgrounds/pink-lines.svg)',
+        'pink-lines-lg': 'url(/backgrounds/pink-lines-lg.svg)',
+        'faq-dots': 'url(/backgrounds/faq-dots.svg)',
+        dots: 'url(/backgrounds/dots.svg)',
+        'dots-lg': 'url(/backgrounds/dots-lg.svg)'
+      },
+      content: { confetti: 'url(/backgrounds/confetti.svg)' },
+      fontFamily: {
+        satoshi: 'Satoshi',
+        charm: 'Charm',
+        aeonik: 'Aeonik'
+      }
+    }
+  },
+  plugins: []
 } satisfies Config;
