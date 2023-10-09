@@ -1,9 +1,9 @@
 <script>
-  import '$lib/assets/css/pages/home.scss';
   import { ArrowRight, ChevronRight, Envelope, Hero, ThinkingWoman } from '$lib/assets/vectors';
-  import { HomePage } from 'src/contents';
+  import HomeContents from 'src/home.contents';
+  import './styles/home/home.scss';
 
-  const { landing, aboutUs, projects, testimonials, subscribe } = HomePage;
+  const { landing, aboutUs, projects, testimonials, subscribe } = HomeContents;
 </script>
 
 <svelte:head>
@@ -71,13 +71,13 @@
     </div>
     <ul class="works-list">
       {#each projects.works as work}
-        <li class={`${work.flip ? 'flipped' : ''}`}>
+        <li>
           <div class="image-wrapper">
             <div>
               <img src={work.imgSrc} alt={work.imgAlt} />
             </div>
           </div>
-          <div class={`work-description-wrapper${work.flip ? ' flipped-decendant' : ''}`}>
+          <div class={`work-description-wrapper${work.flip ? ' flipped' : ''}`}>
             <h3>{work.title}</h3>
             <p>{work.description}</p>
             <button type="button">

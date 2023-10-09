@@ -4,6 +4,20 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
+      colors: {
+        'chaos-black': '#101010',
+        tin: '#909090',
+        'ghost-white': '#f7f6ff',
+        'carte-blanche': '#eeecff',
+        'if-i-could-fly': '#6e5de7',
+        'nostalgia-perfume': '#dcd9f8',
+        jet: '#353535',
+        'flawed-white': '#fffbfb',
+        'shadow-mountain': '#575757',
+        'white-as-heaven': '#fefeff',
+        'glimpse-of-pink': '#fff2f6',
+        'pale-grey': '#fdfdff'
+      },
       backgroundImage: {
         'grey-lines': 'url(/backgrounds/grey-lines.svg)',
         'grey-lines-lg': 'url(/backgrounds/grey-lines-lg.svg)',

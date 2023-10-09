@@ -1,12 +1,12 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  import '$lib/assets/css/root.scss';
-  import { Close, Menu, THDCTech } from '$lib/assets/vectors';
+  import './styles/layout.scss';
+  import { Close, Menu, THDCTechLogo } from '$lib/assets/vectors';
   import { Backdrop, NavLink } from '$lib/components';
-  import { Layout } from 'src/contents';
+  import LayoutContents from 'src/layout.contents';
   import '../app.css';
 
-  const { routes, footerSection } = Layout;
+  const { routes, footerSection } = LayoutContents;
 
   let menuVisible = false;
 
@@ -24,9 +24,9 @@
 </script>
 
 <header class="header">
-  <div>
-    <a href="/" aria-label="THDC Technologies" class="w-[72px] md:w-36">
-      <THDCTech />
+  <div class="header-restrictor">
+    <a href="/" title="Go to home page">
+      <THDCTechLogo />
     </a>
     <button
       type="button"
@@ -42,9 +42,7 @@
       {#each routes as { href, label }}
         <NavLink
           className={`${
-            $page.url.pathname.split(/\//gu)[1] === href.split(/\//gu)[1]
-              ? 'border-b-[slateblue]'
-              : ''
+            $page.url.pathname.split(/\//gu)[1] === href.split(/\//gu)[1] ? 'active' : ''
           }`}
           {href}
         >
@@ -64,8 +62,8 @@
 
 <footer class="footer-container">
   <div class="content-restrictor footer-restrictor">
-    <a href="/" class="thdc-logo">
-      <THDCTech />
+    <a href="/" title="Go to home page">
+      <THDCTechLogo />
     </a>
     <p class="footer-paragraph">{footerSection.paragraph}</p>
     <div class="socials-wrapper">

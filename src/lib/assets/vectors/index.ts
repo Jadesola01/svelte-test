@@ -11,7 +11,7 @@ import Hero from './illustrations/hero.svg?component';
 import ThinkingWoman from './illustrations/thinkingWoman.svg?component';
 import DigitalOcean from './logos/digitalOcean.svg?component';
 import Shopify from './logos/shopify.svg?component';
-import THDCTech from './logos/thdcTech.svg?component';
+import THDCTechLogo from './logos/thdcTech.svg?component';
 
 export {
   ArrowRight,
@@ -24,7 +24,7 @@ export {
   LinkedIn,
   Menu,
   Shopify,
-  THDCTech,
+  THDCTechLogo,
   ThinkingWoman,
   Twitter,
   YouTube

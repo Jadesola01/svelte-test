@@ -2,28 +2,34 @@
   @apply w-full max-w-[1440px] mx-auto min-w-[375px];
 }
 .header {
-  @apply bg-[#f7f6ff] relative z-50;
-  div {
+  @apply bg-ghost-white relative z-50;
+  &-restrictor {
     @apply py-6 px-8 flex items-center justify-between lg:py-10 lg:px-[105.5px];
+    & > a {
+      @apply w-[72px] md:w-36;
+    }
     .mobile-navbar-toggler {
       @apply text-2xl lg:hidden;
     }
     nav {
-      @apply absolute flex-col items-stretch justify-start py-3 bg-[#F7F6FF] top-20 md:top-28 left-0 w-full z-50 lg:flex-row lg:static lg:flex lg:w-auto lg:gap-[17px];
+      @apply absolute flex-col items-stretch justify-start py-3 bg-ghost-white top-20 md:top-28 left-0 w-full z-50 lg:flex-row lg:static lg:flex lg:w-auto lg:gap-[17px];
       a {
         @apply font-light text-inherit text-sm leading-[1.3] py-3 px-6 lg:p-[10px] text-center border border-transparent;
+        &.active {
+          @apply border-b-if-i-could-fly;
+        }
       }
     }
     .header-get-quote-button {
-      @apply hidden rounded-md lg:inline-block p-[10px] font-bold text-[#eeecff] bg-[#101010] text-sm leading-[1.3];
+      @apply hidden rounded-md lg:inline-block p-[10px] font-bold text-carte-blanche bg-chaos-black text-sm leading-[1.3];
     }
   }
 }
 .footer-container {
-  @apply text-[#909090] bg-[#f7f6ff];
-  .footer-restrictor {
+  @apply text-tin bg-ghost-white;
+  &-restrictor {
     @apply text-[10px] leading-tight font-light py-8 px-5 flex flex-col gap-6 items-stretch md:pt-20 md:pb-16 md:text-[21px];
-    .thdc-logo {
+    & > a {
       @apply w-[72px] md:w-[184px] mx-auto;
     }
     .footer-paragraph {
@@ -48,7 +54,7 @@
       }
     }
     hr {
-      @apply h-[1px] bg-[#6e5de7] border-0 md:my-[14px] lg:mx-40;
+      @apply h-[1px] bg-if-i-could-fly border-0 md:my-[14px] lg:mx-40;
     }
     .terms-and-privacy {
       @apply flex items-center justify-center gap-1;
