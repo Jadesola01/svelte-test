@@ -1,4 +1,4 @@
-import { DigitalOcean, Envelope, Shopify } from './lib/assets/vectors';
+import { DigitalOcean, Envelope, Shopify } from '$lib/assets/vectors';
 
 export default {
   landing: {

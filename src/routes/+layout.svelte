@@ -1,10 +1,10 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  import './styles/layout.scss';
+  import 'src/routes/layout.scss';
   import { Close, Menu, THDCTechLogo } from '$lib/assets/vectors';
-  import { Backdrop, NavLink } from '$lib/components';
-  import LayoutContents from 'src/layout.contents';
-  import '../app.css';
+  import { Backdrop, NavLink } from '$lib/components/layout';
+  import LayoutContents from 'src/routes/layout.content';
+  import '../app.scss';
 
   const { routes, footerSection } = LayoutContents;
 

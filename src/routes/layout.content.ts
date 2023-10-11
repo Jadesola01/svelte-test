@@ -1,4 +1,4 @@
-import { Instagram, LinkedIn, Twitter, YouTube } from './lib/assets/vectors';
+import { Instagram, LinkedIn, Twitter, YouTube } from '$lib/assets/vectors';
 
 export default {
   routes: [
