@@ -2,6 +2,7 @@ module.exports = {
 	root: true,
 	extends: [
 		'eslint:recommended',
+		'airbnb',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:svelte/recommended',
 		'prettier'
@@ -11,7 +12,10 @@ module.exports = {
 	parserOptions: {
 		sourceType: 'module',
 		ecmaVersion: 2020,
-		extraFileExtensions: ['.svelte']
+		extraFileExtensions: ['.svelte'],
+	},
+	rules: {
+		indent: ["error", 2]
 	},
 	env: {
 		browser: true,
@@ -26,5 +30,5 @@ module.exports = {
 				parser: '@typescript-eslint/parser'
 			}
 		}
-	]
+	],
 };
