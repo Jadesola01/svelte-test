@@ -1,4 +1,4 @@
-import Backdrop from './backdrop.svelte';
-import NavLink from './navLink.svelte';
+import Backdrop from './layout/backdrop.svelte';
+import NavLink from './layout/navLink.svelte';
 
 export { Backdrop, NavLink };

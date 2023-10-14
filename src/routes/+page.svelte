@@ -1,7 +1,7 @@
 <script>
   import { ArrowRight, ChevronRight, Envelope, Hero, ThinkingWoman } from '$lib/assets/vectors';
-  import HomeContents from 'src/home.contents';
-  import './styles/home/home.scss';
+  import HomeContents from './home.content.ts';
+  import './home.scss';
 
   const { landing, aboutUs, projects, testimonials, subscribe } = HomeContents;
 </script>
