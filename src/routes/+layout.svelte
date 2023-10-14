@@ -60,7 +60,7 @@
   <slot />
 </main>
 
-<footer class="footer-container">
+<footer class="footer">
   <div class="content-restrictor footer-restrictor">
     <a href="/" title="Go to home page">
       <THDCTechLogo />

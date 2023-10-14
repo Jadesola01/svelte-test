@@ -5,18 +5,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        'chaos-black': '#101010',
-        tin: '#909090',
-        'ghost-white': '#f7f6ff',
-        'carte-blanche': '#eeecff',
-        'if-i-could-fly': '#6e5de7',
-        'nostalgia-perfume': '#dcd9f8',
-        jet: '#353535',
-        'flawed-white': '#fffbfb',
-        'shadow-mountain': '#575757',
-        'white-as-heaven': '#fefeff',
-        'glimpse-of-pink': '#fff2f6',
-        'pale-grey': '#fdfdff'
+        'black-923': '#101010',
+        'gray-642': '#909090',
+        'white-157': '#f7f6ff',
+        'white-265': '#eeecff',
+        'indigo-527': '#6e5de7',
+        'lavender-212': '#dcd9f8',
+        'gray-856': '#353535',
+        'white-057': '#fffbfb',
+        'gray-614': '#575757',
+        'white-103': '#fefeff',
+        'pink-188': '#fff2f6',
+        'gray-427': '#fdfdff'
       },
       backgroundImage: {
         'grey-lines': 'url(/backgrounds/grey-lines.svg)',

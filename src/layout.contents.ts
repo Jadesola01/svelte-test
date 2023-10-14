@@ -1,4 +1,4 @@
-import { Instagram, LinkedIn, Twitter, YouTube } from './lib/assets/vectors';
+import { Instagram, LinkedIn, X, YouTube } from './lib/assets/vectors';
 
 export default {
   routes: [
@@ -14,9 +14,9 @@ export default {
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit mi, euismod proin turpis malesuada montes. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit mi, euismod proin turpis malesuada montes.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit mi, euismod pro',
     socials: [
       {
-        href: 'https://twitter.com/thdctech',
-        label: 'Check out our Twitter',
-        icon: Twitter
+        href: 'https://x.com/thdctech',
+        label: 'Check out our X',
+        icon: X
       },
       {
         href: 'https://instagram.com/thdctech',

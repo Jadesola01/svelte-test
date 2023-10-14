@@ -5,7 +5,7 @@ import Envelope from './icons/envelope.svg?component';
 import Instagram from './icons/instagram.svg?component';
 import LinkedIn from './icons/linkedIn.svg?component';
 import Menu from './icons/menu.svg?component';
-import Twitter from './icons/twitter.svg?component';
+import X from './icons/x.svg?component';
 import YouTube from './icons/youtube.svg?component';
 import Hero from './illustrations/hero.svg?component';
 import ThinkingWoman from './illustrations/thinkingWoman.svg?component';
@@ -26,6 +26,6 @@ export {
   Shopify,
   THDCTechLogo,
   ThinkingWoman,
-  Twitter,
+  X,
   YouTube
 };

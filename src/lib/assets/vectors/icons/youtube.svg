@@ -1,10 +1,5 @@
-<svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_311_293)">
-<path d="M35.9047 11.0714C36.6663 14.0414 36.6663 20.2414 36.6663 20.2414C36.6663 20.2414 36.6663 26.4414 35.9047 29.4114C35.4813 31.0531 34.243 32.3447 32.6747 32.7814C29.8263 33.5747 19.9997 33.5747 19.9997 33.5747C19.9997 33.5747 10.178 33.5747 7.32467 32.7814C5.74967 32.3381 4.51301 31.0481 4.09467 29.4114C3.33301 26.4414 3.33301 20.2414 3.33301 20.2414C3.33301 20.2414 3.33301 14.0414 4.09467 11.0714C4.51801 9.42975 5.75634 8.13808 7.32467 7.70141C10.178 6.90808 19.9997 6.90808 19.9997 6.90808C19.9997 6.90808 29.8263 6.90808 32.6747 7.70141C34.2497 8.14475 35.4863 9.43475 35.9047 11.0714ZM16.6663 26.0747L26.6663 20.2414L16.6663 14.4081V26.0747Z" fill="#909090"/>
-</g>
-<defs>
-<clipPath id="clip0_311_293">
-<rect width="40" height="40" fill="white" transform="translate(0 0.241394)"/>
-</clipPath>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z"></path>
+   <path d="M10 9l5 3l-5 3z"></path>
 </svg>

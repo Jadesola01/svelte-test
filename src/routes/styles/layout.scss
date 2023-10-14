@@ -2,7 +2,7 @@
   @apply w-full max-w-[1440px] mx-auto min-w-[375px];
 }
 .header {
-  @apply bg-ghost-white relative z-50;
+  @apply bg-white-157 relative z-50;
   &-restrictor {
     @apply py-6 px-8 flex items-center justify-between lg:py-10 lg:px-[105.5px];
     & > a {
@@ -12,21 +12,21 @@
       @apply text-2xl lg:hidden;
     }
     nav {
-      @apply absolute flex-col items-stretch justify-start py-3 bg-ghost-white top-20 md:top-28 left-0 w-full z-50 lg:flex-row lg:static lg:flex lg:w-auto lg:gap-[17px];
+      @apply absolute flex-col items-stretch justify-start py-3 bg-white-157 top-20 md:top-28 left-0 w-full z-50 lg:flex-row lg:static lg:flex lg:w-auto lg:gap-[17px];
       a {
         @apply font-light text-inherit text-sm leading-[1.3] py-3 px-6 lg:p-[10px] text-center border border-transparent;
         &.active {
-          @apply border-b-if-i-could-fly;
+          @apply border-b-indigo-527;
         }
       }
     }
     .header-get-quote-button {
-      @apply hidden rounded-md lg:inline-block p-[10px] font-bold text-carte-blanche bg-chaos-black text-sm leading-[1.3];
+      @apply hidden rounded-md lg:inline-block p-[10px] font-bold text-white-265 bg-black-923 text-sm leading-[1.3];
     }
   }
 }
-.footer-container {
-  @apply text-tin bg-ghost-white;
+.footer {
+  @apply text-gray-642 bg-white-157;
   &-restrictor {
     @apply text-[10px] leading-tight font-light py-8 px-5 flex flex-col gap-6 items-stretch md:pt-20 md:pb-16 md:text-[21px];
     & > a {
@@ -43,18 +43,18 @@
       div {
         @apply flex items-center gap-6 p-0 list-none md:gap-12;
         a {
-          @apply flex-shrink-0 w-6 md:w-[33.5px];
+          @apply block flex-shrink-0 w-6 aspect-square md:w-10;
           &:last-child {
             @apply hidden lg:last:inline-block;
           }
           svg {
-            @apply md:m-[3.25px];
+            @apply w-full h-auto;
           }
         }
       }
     }
     hr {
-      @apply h-[1px] bg-if-i-could-fly border-0 md:my-[14px] lg:mx-40;
+      @apply h-[1px] bg-indigo-527 border-0 md:my-[14px] lg:mx-40;
     }
     .terms-and-privacy {
       @apply flex items-center justify-center gap-1;
