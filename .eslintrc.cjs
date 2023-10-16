@@ -8,14 +8,14 @@ module.exports = {
 		'prettier'
 	],
 	parser: '@typescript-eslint/parser',
-	plugins: ['@typescript-eslint'],
+	plugins: [ '@typescript-eslint' ],
 	parserOptions: {
 		sourceType: 'module',
 		ecmaVersion: 2020,
-		extraFileExtensions: ['.svelte'],
+		extraFileExtensions: [ '.svelte' ]
 	},
 	rules: {
-		indent: ["error", 2]
+		indent: [ 'error', 2 ]
 	},
 	env: {
 		browser: true,
@@ -24,11 +24,18 @@ module.exports = {
 	},
 	overrides: [
 		{
-			files: ['*.svelte'],
+			files: [ '*.svelte' ],
 			parser: 'svelte-eslint-parser',
 			parserOptions: {
 				parser: '@typescript-eslint/parser'
 			}
 		}
 	],
+	settings: {
+		'import/resolver': {
+			node: {
+				extensions: [ '.js', '.jsx', '.ts', '.tsx', '.svelte' ]
+			}
+		}
+	}
 };
