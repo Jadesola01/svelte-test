@@ -2,9 +2,9 @@ module.exports = {
 	root: true,
 	extends: [
 		'eslint:recommended',
-		'airbnb',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:svelte/recommended',
+		'airbnb',
 		'prettier'
 	],
 	parser: '@typescript-eslint/parser',

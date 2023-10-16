@@ -1,8 +1,8 @@
-<script lang="ts">
+<script lang='ts'>
+	import LayoutContents from 'src/routes/layout.content';
+	import { Backdrop, NavLink } from 'src/lib/components';
 	import { page } from '$app/stores';
 	import { Close, Menu, THDCTechLogo } from '$lib/assets/vectors';
-	import { Backdrop, NavLink } from 'src/lib/components';
-	import LayoutContents from 'src/routes/layout.content';
 	import 'src/routes/layout.scss';
 	import '../app.scss';
 
@@ -11,38 +11,38 @@
 	let menuVisible = false;
 
 	function toggleMenuVisibility() {
-		menuVisible = !menuVisible;
-		if (typeof window !== 'undefined') {
-			const {
-				document: {
-					body: { classList: bodyClasses }
-				}
-			} = window;
-			menuVisible ? bodyClasses.add('restrict') : bodyClasses.remove('restrict');
-		}
+	  menuVisible = !menuVisible;
+	  if (typeof window !== 'undefined') {
+	    const {
+	      document: {
+	        body: { classList: bodyClasses }
+	      }
+	    } = window;
+	    menuVisible ? bodyClasses.add('restrict') : bodyClasses.remove('restrict');
+	  }
 	}
 </script>
 
-<header class="header">
-	<div class="header-restrictor">
-		<a href="/" title="Go to home page">
+<header class='header'>
+	<div class='header-restrictor'>
+		<a href='/' title='Go to home page'>
 			<THDCTechLogo />
 		</a>
 		<button
-			type="button"
-			class="mobile-navbar-toggler"
-			aria-label="Show nav"
+			type='button'
+			class='mobile-navbar-toggler'
+			aria-label='Show nav'
 			on:click={toggleMenuVisibility}
-			aria-controls="navmenu"
+			aria-controls='navmenu'
 			aria-expanded={menuVisible}
 		>
 			<svelte:component this={menuVisible ? Close : Menu} />
 		</button>
-		<nav class={`${menuVisible ? 'flex' : 'hidden'}`} id="navmenu">
+		<nav class={`${menuVisible ? 'flex' : 'hidden'}`} id='navmenu'>
 			{#each routes as { href, label }}
 				<NavLink
 					className={`${
-						$page.url.pathname.split(/\//gu)[1] === href.split(/\//gu)[1] ? 'active' : ''
+					  $page.url.pathname.split(/\//gu)[1] === href.split(/\//gu)[1] ? 'active' : ''
 					}`}
 					{href}
 				>
@@ -50,8 +50,8 @@
 				</NavLink>
 			{/each}
 		</nav>
-		<button type="button" class="header-get-quote-button">
-			<span class="inline-block my-[6px] mx-[39px]">Get A Quote </span>
+		<button type='button' class='header-get-quote-button'>
+			<span class='inline-block my-[6px] mx-[39px]'>Get A Quote </span>
 		</button>
 	</div>
 </header>
@@ -60,13 +60,13 @@
 	<slot />
 </main>
 
-<footer class="footer">
-	<div class="content-restrictor footer-restrictor">
-		<a href="/" title="Go to home page">
+<footer class='footer'>
+	<div class='content-restrictor footer-restrictor'>
+		<a href='/' title='Go to home page'>
 			<THDCTechLogo />
 		</a>
-		<p class="footer-paragraph">{footerSection.paragraph}</p>
-		<div class="socials-wrapper">
+		<p class='footer-paragraph'>{footerSection.paragraph}</p>
+		<div class='socials-wrapper'>
 			<p>FOLLOW US</p>
 			<div>
 				{#each footerSection.socials as { href, label, icon }}
@@ -77,8 +77,8 @@
 			</div>
 		</div>
 		<hr />
-		<div class="terms-and-privacy">
-			<a href="/t&s">Terms and Service</a>|<a href="/pp">Privacy Policy</a>
+		<div class='terms-and-privacy'>
+			<a href='/t&s'>Terms and Service</a>|<a href='/pp'>Privacy Policy</a>
 		</div>
 	</div>
 </footer>
