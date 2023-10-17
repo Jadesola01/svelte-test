@@ -1,0 +1,48 @@
+.about-us-landing {
+	@apply lg:min-h-[auto] bg-dots-about-us lg:bg-dots-about-us-lg bg-no-repeat bg-contain bg-[center_21px];
+	&-restrictor {
+		@apply text-gray-5;
+		.text-content {
+			@apply text-center w-[80.26667%] mt-8 mx-auto mb-[27px];
+			h1 {
+				@apply text-black-1 text-[32px] font-medium leading-tight;
+			}
+			p {
+				@apply text-[13px] mt-4;
+			}
+		}
+		.stacked-images-wrapper {
+			@apply w-[87.2%] mx-auto mb-14;
+		}
+	}
+}
+.wwd-section {
+	@apply bg-white-1 text-gray-1;
+	&-restrictor {
+		@apply pt-8 pb-6;
+		.text-content {
+			@apply text-center mb-4;
+			h2 {
+				@apply text-black-1 text-[26px];
+			}
+		}
+		.about-us-doings {
+			@apply border border-transparent;
+			.doing-wrapper {
+				@apply text-center my-4 leading-tight;
+				div {
+					@apply inline-block w-[42px] p-2 border border-purple-1 mb-3 rounded-full;
+				}
+				p {
+					@apply font-light;
+				}
+			}
+		}
+		[href='/see-all-services'] {
+			@apply text-gray-3 block max-w-max mt-[14px] mx-auto rounded-[10px] border border-purple-1 font-light;
+			span {
+				@apply inline-block mx-[18px] my-[14.5px] leading-tight;
+			}
+		}
+	}
+}

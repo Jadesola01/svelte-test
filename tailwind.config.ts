@@ -16,7 +16,8 @@ export default {
 				'gray-3': '#575757',
 				'white-4': '#fefeff',
 				'pink-1': '#fff2f6',
-				'gray-4': '#fdfdff'
+				'gray-4': '#fdfdff',
+				'gray-5': '#6A6A6A'
 			},
 			backgroundImage: {
 				'grey-lines': 'url(/backgrounds/grey-lines.svg)',
@@ -25,7 +26,9 @@ export default {
 				'pink-lines-lg': 'url(/backgrounds/pink-lines-lg.svg)',
 				'faq-dots': 'url(/backgrounds/faq-dots.svg)',
 				dots: 'url(/backgrounds/dots.svg)',
-				'dots-lg': 'url(/backgrounds/dots-lg.svg)'
+				'dots-lg': 'url(/backgrounds/dots-lg.svg)',
+				'dots-about-us': 'url(/backgrounds/dots-about-us.svg)',
+				'dots-about-us-lg': 'url(/backgrounds/dots-about-us-lg.svg)'
 			},
 			content: { confetti: 'url(/backgrounds/confetti.svg)' },
 			fontFamily: {
