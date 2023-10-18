@@ -1,5 +1,5 @@
 <script>
-	import { StackedImagesAboutUs } from 'src/lib/assets/vectors';
+	import { ArrowRight, DigitalOcean, Shopify, StackedImagesAboutUs } from 'src/lib/assets/vectors';
 	import AboutUsContents from './about-us.content';
 	import './about-us.scss';
 </script>
@@ -22,7 +22,26 @@
 			</p>
 		</div>
 		<div class="stacked-images-wrapper">
-			<StackedImagesAboutUs />
+			<div>
+				<div
+					class="bg-purple-500 bg-opacity-50 absolute w-[83.60856%] h-[80.68%] bottom-0 right-[16.39144%] rounded-[19px] overflow-hidden"
+				>
+					<img
+						class="absolute top-0 left-0 w-full h-full object-cover object-center"
+						src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z3JvdXAlMjB3b3JraW5nJTIwYXQlMjBvZmZpY2UlMjBpbiUyMGZyb250JTIwb2YlMjBjb21wdXRlcnxlbnwwfHwwfHx8MA%3D%3D"
+						alt=""
+					/>
+				</div>
+				<div
+					class="bg-slate-50 absolute w-[50.02446%] h-[45.988%] top-0 left-[49.97554%] rounded-[19px] overflow-hidden"
+				>
+					<img
+						class="absolute top-0 left-0 w-full h-full object-cover object-center"
+						src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGdyb3VwJTIwd29ya2luZyUyMGF0JTIwb2ZmaWNlJTIwaW4lMjBmcm9udCUyMG9mJTIwY29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D"
+						alt=""
+					/>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -48,19 +67,43 @@
 	</div>
 </section>
 
-<section>
-	<div class="content-restrictor">
-		<h2>Our Process</h2>
-		<h3>Our Happy Clients</h3>
-		<h3>Our Trusted Partners</h3>
+<section class="our-process-section">
+	<div class="content-restrictor our-process-section-restrictor">
+		<div class="text-content">
+			<h2>Our Process</h2>
+		</div>
+		<div class="happy-clients">
+			<h3>Our Happy Clients</h3>
+			<p>Just some of the leading brands that trust THDC Technologies</p>
+			<div class="clients">
+				{#each [DigitalOcean, Shopify, Shopify, DigitalOcean] as client}
+					<div>
+						<svelte:component this={client} />
+					</div>
+				{/each}
+			</div>
+		</div>
+		<div class="trusted-partners">
+			<h3>Our Trusted Partners</h3>
+			<div class="partners">
+				{#each [DigitalOcean, Shopify, Shopify, DigitalOcean] as partner}
+					<div>
+						<svelte:component this={partner} />
+					</div>
+				{/each}
+			</div>
+		</div>
 	</div>
 </section>
 
-<section>
-	<div class="content-restrictor">
-		<h2>Have a Project in Mind?</h2>
+<section class="get-quote-section">
+	<div class="content-restrictor get-quote-section-restrictor">
+		<div class="text-content">
+			<h2>Have a Project in Mind?</h2>
+		</div>
 		<a href="/get-a-quote">
 			<span>Get A Quote</span>
+			<ArrowRight />
 		</a>
 	</div>
 </section>

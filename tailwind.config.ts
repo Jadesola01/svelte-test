@@ -17,7 +17,9 @@ export default {
 				'white-4': '#fefeff',
 				'pink-1': '#fff2f6',
 				'gray-4': '#fdfdff',
-				'gray-5': '#6A6A6A'
+				'gray-5': '#6A6A6A',
+				'gray-6': '#636363',
+				'gray-7': '#c7c7c7'
 			},
 			backgroundImage: {
 				'grey-lines': 'url(/backgrounds/grey-lines.svg)',
