@@ -1,18 +1,18 @@
 .about-us-landing {
 	@apply lg:min-h-[auto] bg-dots-about-us lg:bg-dots-about-us-lg bg-no-repeat bg-contain bg-[center_21px];
 	&-restrictor {
-		@apply text-gray-5;
+		@apply text-gray-5 lg:flex items-center justify-center gap-[87px] lg:pt-[92px] lg:pb-[106px];
 		.text-content {
-			@apply text-center w-[80.26667%] mt-8 mx-auto mb-[27px];
+			@apply text-center lg:text-left w-[80.26667%] mt-8 mx-auto lg:mx-0 mb-[27px] leading-tight lg:max-w-[34.65278%] lg:pr-[22px];
 			h1 {
-				@apply text-black-1 text-[32px] font-medium leading-tight;
+				@apply text-black-1 text-[32px] font-medium lg:text-[52px] lg:font-bold;
 			}
-			p {
-				@apply text-[13px] mt-4;
+			& > div {
+				@apply text-[13px] lg:text-lg mt-4 lg:mt-3 font-light;
 			}
 		}
 		.stacked-images-wrapper {
-			@apply w-[87.2%] mx-auto mb-14;
+			@apply lg:max-w-[43.19444%] w-[87.2%] mx-auto lg:mx-0 mb-14;
 			& > div {
 				@apply relative w-full pb-[76.45259%];
 			}
@@ -22,29 +22,26 @@
 .wwd-section {
 	@apply bg-white-1 text-gray-1;
 	&-restrictor {
-		@apply pt-8 pb-6;
+		@apply pt-8 lg:pt-14 pb-6 lg:pb-12;
 		.text-content {
-			@apply text-center mb-4;
+			@apply text-center mb-4 lg:mb-12;
 			h2 {
-				@apply text-black-1 text-[26px];
+				@apply text-black-1 text-[26px] lg:text-[36px] font-medium lg:leading-tight;
 			}
 		}
 		.about-us-doings {
-			@apply border border-transparent;
+			@apply border border-transparent lg:flex items-center justify-center gap-[104px] lg:mb-[88px];
 			.doing-wrapper {
-				@apply text-center my-4 leading-tight;
+				@apply text-center my-4 lg:my-0 leading-tight font-light lg:text-2xl lg:font-medium lg:leading-tight;
 				div {
-					@apply inline-block bg-white-2 w-[42px] p-2 border border-purple-1 mb-3 rounded-full;
-				}
-				p {
-					@apply font-light;
+					@apply inline-block bg-white-2 w-[42px] lg:w-[120px] p-2 lg:p-5 border lg:border-4 border-purple-1 mb-3 rounded-full;
 				}
 			}
 		}
 		[href='/see-all-services'] {
-			@apply text-gray-3 block max-w-max mt-[14px] mx-auto rounded-[10px] border border-purple-1 font-light;
+			@apply text-gray-3 block max-w-max mt-[14px] mx-auto rounded-[10px] border lg:border-2 border-purple-1 font-light lg:text-[28px] lg:font-medium leading-tight;
 			span {
-				@apply inline-block mx-[18px] my-[14.5px] leading-tight;
+				@apply inline-block mx-[18px] lg:mx-[40.5px] my-[14.5px] lg:my-[25px];
 			}
 		}
 	}
@@ -92,17 +89,17 @@
 .get-quote-section {
 	@apply bg-pink-1;
 	&-restrictor {
-		@apply text-center py-[38.5px] text-black-1 text-xl font-medium leading-tight;
+		@apply text-center py-[38.5px] lg:pt-16 lg:pb-20 text-black-1 text-xl lg:text-4xl lg:leading-tight font-medium leading-tight;
 		.text-content {
-			@apply mb-4;
+			@apply mb-4 lg:mb-8;
 		}
 		[href='/get-a-quote'] {
-			@apply inline-flex items-center justify-center rounded-xl gap-3 bg-purple-1 py-4 px-7;
+			@apply inline-flex bg-gradient-to-t items-center justify-center rounded-xl lg:rounded-3xl gap-3 lg:gap-[18px] from-purple-1 to-black py-4 lg:py-[29px] px-7 lg:px-[49px] lg:text-[28px];
 			span {
-				@apply text-white text-xl leading-tight;
+				@apply text-white leading-tight;
 			}
 			svg {
-				@apply w-7;
+				@apply w-7 lg:w-[34px];
 			}
 		}
 	}

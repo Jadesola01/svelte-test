@@ -12,14 +12,18 @@
 	<div class="content-restrictor about-us-landing-restrictor">
 		<div class="text-content">
 			<h1>About Us</h1>
-			<p>
-				Our team of experienced professionals is passionate about helping our clients achieve their
-				business goals. We take the time to understand each client's unique needs and develop
-				customized solutions that deliver results. We believe that every business has a story to
-				tell, and we are committed to helping our clients tell their stories in a way that resonates
-				with their target audience. We are also committed to providing our clients with the highest
-				quality of service and support.
-			</p>
+			<div>
+				<p>
+					Our team of experienced professionals is passionate about helping our clients achieve
+					their business goals. We take the time to understand each client's unique needs and
+					develop customized solutions that deliver results.
+				</p>
+				<p>
+					We believe that every business has a story to tell, and we are committed to helping our
+					clients tell their stories in a way that resonates with their target audience. We are also
+					committed to providing our clients with the highest quality of service and support.
+				</p>
+			</div>
 		</div>
 		<div class="stacked-images-wrapper">
 			<div>
