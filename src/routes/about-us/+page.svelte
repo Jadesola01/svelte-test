@@ -76,25 +76,27 @@
 		<div class="text-content">
 			<h2>Our Process</h2>
 		</div>
-		<div class="happy-clients">
-			<h3>Our Happy Clients</h3>
-			<p>Just some of the leading brands that trust THDC Technologies</p>
-			<div class="clients">
-				{#each [DigitalOcean, Shopify, Shopify, DigitalOcean] as client}
-					<div>
-						<svelte:component this={client} />
-					</div>
-				{/each}
+		<div class="sum-wrapper">
+			<div class="happy-clients">
+				<h3>Our Happy Clients</h3>
+				<p>Just some of the leading brands that trust THDC Technologies</p>
+				<div class="clients">
+					{#each [DigitalOcean, Shopify, Shopify, DigitalOcean] as client}
+						<div>
+							<svelte:component this={client} />
+						</div>
+					{/each}
+				</div>
 			</div>
-		</div>
-		<div class="trusted-partners">
-			<h3>Our Trusted Partners</h3>
-			<div class="partners">
-				{#each [DigitalOcean, Shopify, Shopify, DigitalOcean] as partner}
-					<div>
-						<svelte:component this={partner} />
-					</div>
-				{/each}
+			<div class="trusted-partners">
+				<h3>Our Trusted Partners</h3>
+				<div class="partners">
+					{#each [DigitalOcean, Shopify, Shopify, DigitalOcean] as partner}
+						<div>
+							<svelte:component this={partner} />
+						</div>
+					{/each}
+				</div>
 			</div>
 		</div>
 	</div>
