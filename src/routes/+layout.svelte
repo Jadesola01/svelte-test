@@ -50,9 +50,7 @@
 				</NavLink>
 			{/each}
 		</nav>
-		<button type="button" class="header-get-quote-button">
-			<span class="inline-block my-[6px] mx-[39px]">Get A Quote </span>
-		</button>
+		<a href="/get-a-quote" class="header-get-quote-link">Get A Quote</a>
 	</div>
 </header>
 

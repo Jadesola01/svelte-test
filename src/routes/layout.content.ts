@@ -7,7 +7,8 @@ export default {
 		{ href: '/contact-us', label: 'Contact Us' },
 		{ href: '/products', label: 'Products' },
 		{ href: '/blog', label: 'Blog' },
-		{ href: '/faqs', label: 'FAQs' }
+		{ href: '/faqs', label: 'FAQs' },
+		{ href: '/get-a-quote', label: 'Get A Quote' }
 	],
 	footerSection: {
 		paragraph:
