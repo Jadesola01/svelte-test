@@ -30,7 +30,7 @@ jobs:
           echo "$SSH_KEY" > ~/.ssh/staging.key
           chmod 600 ~/.ssh/staging.key
           cat >>~/.ssh/config <<END
-          Host prod_server
+          Host HOSTNAME
             HostName $SSH_HOST
             User $SSH_USER
             Port $SSH_PORT
@@ -44,4 +44,4 @@ jobs:
           SSH_PORT: ${{ secrets.PORT }}
 
       - name: Deploy to VPS with SSH
-        run: rsync -avrzh --update --delete ./build/ ${{ secrets.USERNAME }}@prod_server:${{ secrets.DEPLOY_DIR }}
+        run: rsync -avrzh --update --delete ./build/ ${{ secrets.USERNAME }}@HOSTNAME:${{ secrets.DEPLOY_DIR }}
