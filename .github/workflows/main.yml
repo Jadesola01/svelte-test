@@ -44,5 +44,5 @@ jobs:
           SSH_PORT: ${{ secrets.PORT }}
 
       - name: Deploy to VPS with SSH
-        run: rsync -avrzh --update --delete ./build/ ${{ secrets.USERNAME }}@${{ secrets.HOSTNAME }}:${{ secrets.DEPLOY_DIR }}
+        run: rsync -avrzh --update --delete ./build/ thundgb2@162.240.231.128:/home/thundgb2/public_html/staging
 
