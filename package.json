@@ -1,6 +1,7 @@
 {
 	"name": "home-site",
 	"version": "0.0.1",
+	"homepage": "./",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev --port 5050",
