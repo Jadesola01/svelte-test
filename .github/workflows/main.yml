@@ -26,18 +26,16 @@ jobs:
          npm install
          npm run build
 
-      - name: Install SSH Key
-        uses: shimataro/ssh-key-action@v2
+      - name: rsync deployments
+        uses: burnett01/rsync-deployments@6.0.0
         with:
-          key: ${{ secrets.SSH_KEY }}
-          known_hosts: ${{ secrets.KNOWN_HOSTS }}
-
-
-      - name: Adding Known Hosts
-        run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
-
-      - name: Deploy with rsync
-        run: rsync -avzn dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/thundgb2/public_html/staging
+          switches: -avzr --delete
+          path: src/
+          remote_path: ${{ secrets.DEPLOY_PATH }}
+          remote_host: ${{ secrets.SSH_HOST }}
+          remote_port: ${{ secrets.SSH_PORT }}
+          remote_user: ${{ secrets.SSH_USER }}
+          remote_key: ${{ secrets.SSH_KEY }}
         
       
  
