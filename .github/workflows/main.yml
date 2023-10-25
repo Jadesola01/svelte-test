@@ -35,7 +35,7 @@ jobs:
            port: ${{ secrets.SERVER_PORT }}
            username: ${{ secrets.SERVER_USERNAME }}
            private_key: ${{ secrets.PRIVATE_KEY }}
-           scp_source: dist
+           scp_source: dist/
            scp_target: /home/thundgb2/public_html/staging
            before_script: |
              df -h
