@@ -23,7 +23,7 @@ jobs:
 
       - name: Build with Node.js 
         run: |
-         npm run install
+         npm install
          npm run build
         
 
