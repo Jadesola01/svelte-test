@@ -1,0 +1,12 @@
+# Rewrite non /dist/ requests to /dist/
+
+RewriteCond %{REQUEST_URI} !^/dist/
+
+RewriteRule ^(.*)$ /dist/$1 [L]
+
+# Rewrite requests to non-existing files/dirs to /dist/app.html
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ /dist/app.html [L]
